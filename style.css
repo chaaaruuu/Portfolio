@@ -160,30 +160,36 @@ footer {
     margin: 0 auto;
 }
 
+
 .about-intro h1 {
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 
 .about-intro-content {
     display: flex;  
     align-items: center;
-    justify-content: center; 
-    gap: 20px; 
-    text-align: left; 
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
 }
+
 
 .image {
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
+
 .about-intro-content p {
-    flex: 1; 
+    flex: 1;
     max-width: 500px;
 }
+
 
 .about-content {
     max-width: 800px;
@@ -192,15 +198,18 @@ footer {
     padding: 20px;
 }
 
+
 .about-content h2 {
     font-size: 26px;
     margin-top: 30px;
 }
 
+
 .about-content ul {
     list-style-type: none;
     padding: 0;
 }
+
 
 .about-content ul li {
     font-size: 18px;
@@ -213,6 +222,8 @@ footer {
 }
 
 
+
+
 /* Fade-in Animation */
 .fade-in {
     opacity: 0;
@@ -220,10 +231,12 @@ footer {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* Responsive Styles for Phones */
 @media (max-width: 768px) {
@@ -233,24 +246,30 @@ footer {
         text-align: center;
     }
 
+
     .image {
         width: 100%;
+        max-width: 400px;
         height: auto;
-        max-width: 300px;
+        object-fit: cover;
     }
+
 
     .about-intro-content p {
         max-width: 100%;
         margin-top: 20px;
     }
 
+
     .about-content {
         padding: 15px;
     }
 
+
     .about-content h2 {
         font-size: 22px;
     }
+
 
     .about-content ul li {
         font-size: 16px;
@@ -258,18 +277,22 @@ footer {
     }
 }
 
+
 @media (max-width: 480px) {
     .about-intro {
         padding: 15px;
     }
 
+
     .about-content {
         padding: 10px;
     }
 
+
     .about-content h2 {
         font-size: 20px;
     }
+
 
     .about-content ul li {
         font-size: 14px;
