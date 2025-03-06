@@ -1,0 +1,301 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Typing Effect */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Spacing for Sections */
+section {
+    margin-bottom: 60px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project Cards */
+.project {
+    display: inline-block;
+    width: 320px;
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover,
+.project:focus {
+    transform: scale(1.05);
+    outline: 2px solid #007bff;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Improve readability of project descriptions */
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* "View More" Buttons */
+.project .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.project .btn:hover,
+.project .btn:focus {
+    background: #0056b3;
+    transform: translateY(-2px);
+    outline: 2px solid white;
+}
+
+.project .btn:active {
+    background: #003d80;
+    transform: translateY(1px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+
+/* About Page */
+.about-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-intro h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Ensures spacing below the title */
+}
+
+.about-intro-content {
+    display: flex;  /* Enables flexbox */
+    align-items: center; /* Aligns image and text vertically */
+    justify-content: center; /* Centers the content */
+    gap: 20px; /* Adds space between image and text */
+    text-align: left; /* Aligns text properly */
+}
+
+.image {
+    width: 300px;
+    height: 300 px;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.about-intro-content p {
+    flex: 1; /* Allows text to take remaining space */
+    max-width: 500px; /* Prevents text from being too wide */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    font-size: 18px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Page */
+.contact-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+.feedback {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feedback.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
