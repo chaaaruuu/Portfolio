@@ -176,9 +176,10 @@ footer {
 
 .image {
     width: 300px;
-    height: 300 px;
+    height: 300px;
     border-radius: 10px;
     flex-shrink: 0; 
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
 }
 
 .about-intro-content p {
@@ -224,6 +225,59 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive Styles for Phones */
+@media (max-width: 768px) {
+    .about-intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 400px; /* Allow the image to scale up to 400px max */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure image doesn't get distorted */
+    }
+
+    .about-intro-content p {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content ul li {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-intro {
+        padding: 15px;
+    }
+
+    .about-content {
+        padding: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 20px;
+    }
+
+    .about-content ul li {
+        font-size: 14px;
+        padding: 6px;
+    }
 }
 
 /* Contact Page */
