@@ -13,18 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
             index++;
             setTimeout(typeEffect, typingSpeed);
         } else {
-            // Once typing is done, show description and fade-in content
             descriptionElement.classList.remove("hidden");
             descriptionElement.classList.add("fade-in");
 
             setTimeout(() => {
                 contentElement.classList.remove("hidden");
                 contentElement.classList.add("fade-in");
-            }, 1000); // Delay fade-in of content
+            }, 1000); 
         }
     }
 
-    // Start typing effect
+    
     greetingElement.innerHTML = "";
     typeEffect();
 });
@@ -40,28 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Fade-in animation for the elements on the contact page
+   
     const elements = document.querySelectorAll(".fade-in");
     elements.forEach((element, index) => {
         setTimeout(() => {
             element.classList.add("visible");
-        }, index * 300); // Staggered delay for each element
+        }, index * 300); 
     });
 
-    // Form submission handling
+  
     const form = document.getElementById("contactForm");
     const feedback = document.getElementById("feedback");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
-
-        // Show the success message
         feedback.classList.remove("hidden");
-
-        // Clear the form fields
         form.reset();
-
-        // Hide the success message after 5 seconds
         setTimeout(() => {
             feedback.classList.add("hidden");
         }, 5000);

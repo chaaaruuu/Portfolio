@@ -60,7 +60,7 @@ main {
     visibility: hidden;
 }
 
-/* Spacing for Sections */
+
 section {
     margin-bottom: 60px;
 }
@@ -105,7 +105,6 @@ section {
     margin-bottom: 15px;
 }
 
-/* Improve readability of project descriptions */
 .project h3 {
     font-size: 22px;
     margin-bottom: 15px;
@@ -164,27 +163,27 @@ footer {
 
 .about-intro h1 {
     text-align: center;
-    margin-bottom: 20px; /* Ensures spacing below the title */
+    margin-bottom: 20px; 
 }
 
 .about-intro-content {
-    display: flex;  /* Enables flexbox */
-    align-items: center; /* Aligns image and text vertically */
-    justify-content: center; /* Centers the content */
-    gap: 20px; /* Adds space between image and text */
-    text-align: left; /* Aligns text properly */
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+    gap: 20px; 
+    text-align: left; 
 }
 
 .image {
     width: 300px;
     height: 300 px;
     border-radius: 10px;
-    flex-shrink: 0; /* Prevents image from shrinking */
+    flex-shrink: 0; 
 }
 
 .about-intro-content p {
-    flex: 1; /* Allows text to take remaining space */
-    max-width: 500px; /* Prevents text from being too wide */
+    flex: 1; 
+    max-width: 500px;
 }
 
 .about-content {
